@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="discont">
+            <span>Ganhe R$10,00 de desconto no frete</span>
+        </div>
+        <div class="logo">
+            <h1 class="title">Jordan Shoes</h1>
+        </div>
+    </header>
+    <div class="main">
+        <div class="banner-container">
+            <div class="banner">
+            </div>
+                <div class="txt-banner">
+                    <h1>A melhor loja de Jordan</h1>
+                    <p>O tênis Jordan é fruto de uma velha e longa parceria entre a Nike e o jogador Michael Jordan.</p>
+                </div>
+        </div>
+        <div class="emphasis">
+            <h2 class="title">Destaques</h2>
+            <p>Frete grátis para compras acima de R$1.000,00, aproveite por tempo limitado.</p>
+        </div>
+        <div class="container-shoes">
+            <div class="product-shoes">
+                <img src="img/1.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/2.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/3.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/4.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/5.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/6.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/7.png" alt="tenis-jordan">
+            </div>
+            <div class="product-shoes">
+                <img src="img/8.png" alt="tenis-jordan">
+            </div>
+        </div>
+    </div>
+    <footer class="container-footer">
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.txt-banner', { delay: 500 });
+        // var typed = new Typed('#typed', {
+        //         stringsElement: '#typed-strings', 
+        //         typedSpeed: 100
+        //     })
+        // var typed = new Typed('.txt-banner', {
+        // strings: ["", "<h1>A melhor loja de Jordan</h1> <p>O tênis Jordan é fruto de uma velha e longa parceria entre a Nike e o jogador Michael Jordan.</p>"],
+        // typeSpeed: 30
+        // });
+    </script>
+</body>
+</html>

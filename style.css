@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bgSite);
+}
+header {
+    text-align: center;
+}
+
+.discont {
+    background: var(--title);
+    color: var(--bgCard);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+.logo h1 {
+    font-size: 2rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner {
+    background-image: url(img/wallpaper.jpeg);
+    height: 40vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+@media(max-width: 700px) {
+    .banner {
+        background-attachment: scroll;
+    }
+}
+
+.banner-container {
+    position: relative;
+}
+.txt-banner {
+    max-width: 450px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 8%;
+    font-size: 1rem;
+    background-color: rgba(59, 59, 59, 0.299);
+    padding: 20px;
+}
+
+@media(max-width: 500px){ 
+    .txt-banner {
+        max-width: auto;
+        font-size: .8rem;
+        padding: 10px;
+    }
+}
+
+.txt-banner h1 {
+    margin-bottom: 1rem;
+}
+.txt-banner p {
+    line-height: 30px;
+}
+
+.emphasis {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    line-height: 55px;
+}
+
+.emphasis p {
+    font-size: 1rem;
+    color: var(--text);
+}
+
+@media(max-width: 500px) {
+    .emphasis p {
+        margin: auto;
+        width: 300px;
+        line-height: 45px;
+    }
+}
+
+.title {
+    color: var(--title);
+}
+
+.container-shoes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+.product-shoes img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    background: var(--bgCard);
+    border: none;
+    margin: 8px 5px;
+    border-radius: 5px;
+}
+
+.product-shoes:hover img {
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+}
+
+.container-footer {
+    height: 50px;
+    background-color: var(--title);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
